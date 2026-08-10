@@ -73,6 +73,7 @@ Expected Response (Successful):
         "status": "Not Started",
         "created_at": "2023-10-07 12:00:00"
     }
+    ```
 
 2. GET /api/courses
 Retrieve all courses.
@@ -92,6 +93,7 @@ Expected Response (Successful):
             "created_at": "2023-10-07 12:00:00"
         }
     ]
+    ```
 
 3. GET /api/courses/int:course_id
 Retrieve a specific course by ID.
@@ -109,6 +111,7 @@ Expected Response (Successful):
         "status": "Not Started",
         "created_at": "2023-10-07 12:00:00"
     }
+    ```
 
 4. PUT /api/courses/int:course_id
 Update a specific course by ID.
@@ -130,6 +133,7 @@ Expected Response (Success):
         "status": "In Progress",
         "created_at": "2023-10-07 12:00:00"
     }
+    ```
 
 5. DELETE /api/courses/int:course_id
 Delete a course by ID.
@@ -142,6 +146,7 @@ Expected Response (Success):
     {
         "message": "Course deleted"
     }
+    ```
 
 6. GET /api/courses/stats
 Get statistics about courses.
@@ -160,6 +165,7 @@ Expected Response (Success):
             "Completed": 1
         }
     }
+    ```
 
 - total_courses: The total number of courses in the system.
 - status_counts: An object that counts the courses based on their status ("Not Started", "In Progress", "Completed").
