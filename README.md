@@ -54,7 +54,7 @@ Here's a list of available API endpoints and examples of how to use them.
     Add a new course.
     Request Example:
 
-        ```bash
+        
         curl -X POST http://127.0.0.1:5000/api/courses \
             -H "Content-Type: application/json" \
             -d '{
@@ -80,7 +80,7 @@ Expected Response (Successful):
     Retrieve all courses.
     Request Example:
 
-        ```bash
+        
         curl -X GET http://127.0.0.1:5000/api/courses
 
 
@@ -101,7 +101,7 @@ Expected Response (Successful):
     Retrieve a specific course by ID.
     Request Example:
 
-        ```bash
+        
         curl -X GET http://127.0.0.1:5000/api/courses/1
 
 
@@ -121,7 +121,7 @@ Expected Response (Successful):
     Update a specific course by ID.
     Request Example:
 
-        ```bash
+        
         curl -X PUT http://127.0.0.1:5000/api/courses/1 \
         -H "Content-Type: application/json" \
         -d '{
@@ -145,7 +145,7 @@ Expected Response (Success):
     Delete a course by ID.
     Example Request:
 
-        ```bash
+        
         curl -X DELETE http://127.0.0.1:5000/api/courses/1
 
 
@@ -160,8 +160,8 @@ Expected Response (Success):
     Get statistics about courses.
     This endpoint returns the total number of courses and gives a count of courses by their current status.
     Example Request:
-    
-        ```bash
+
+        
         curl -X GET http://127.0.0.1:5000/api/courses/stats
 
 Expected Response (Success):
