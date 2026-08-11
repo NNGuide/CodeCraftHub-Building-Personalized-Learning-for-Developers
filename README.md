@@ -51,18 +51,17 @@ The application should display a message indicating it is running, typically at 
 Here's a list of available API endpoints and examples of how to use them.
 
 1. POST /api/courses
-
-Add a new course.
-Request Example:
-    ```bash
-    curl -X POST http://127.0.0.1:5000/api/courses \
-        -H "Content-Type: application/json" \
-        -d '{
-            "name": "Introduction to Python",
-            "description": "Learn the basics of Python programming.",
-            "target_date": "2023-12-31",
-            "status": "Not Started"
-            }'
+    Add a new course.
+    Request Example:
+        ```bash
+        curl -X POST http://127.0.0.1:5000/api/courses \
+            -H "Content-Type: application/json" \
+            -d '{
+                "name": "Introduction to Python",
+                "description": "Learn the basics of Python programming.",
+                "target_date": "2023-12-31",
+                "status": "Not Started"
+                }'
         
 
 Expected Response (Successful):
@@ -77,10 +76,10 @@ Expected Response (Successful):
     }
 
 2. GET /api/courses
-Retrieve all courses.
-Request Example:
-    ```bash
-    curl -X GET http://127.0.0.1:5000/api/courses
+    Retrieve all courses.
+    Request Example:
+        ```bash
+        curl -X GET http://127.0.0.1:5000/api/courses
 
 
 Expected Response (Successful):
@@ -97,11 +96,10 @@ Expected Response (Successful):
     ]
 
 3. GET /api/courses/int:course_id
-
-Retrieve a specific course by ID.
-Request Example:
-    ```bash
-    curl -X GET http://127.0.0.1:5000/api/courses/1
+    Retrieve a specific course by ID.
+    Request Example:
+        ```bash
+        curl -X GET http://127.0.0.1:5000/api/courses/1
 
 
 Expected Response (Successful):
@@ -117,15 +115,14 @@ Expected Response (Successful):
 
 
 4. PUT /api/courses/int:course_id
-
-Update a specific course by ID.
-Request Example:
-    ```bash
-    curl -X PUT http://127.0.0.1:5000/api/courses/1 \
-     -H "Content-Type: application/json" \
-     -d '{
-           "status": "In Progress"
-         }'
+    Update a specific course by ID.
+    Request Example:
+        ```bash
+        curl -X PUT http://127.0.0.1:5000/api/courses/1 \
+        -H "Content-Type: application/json" \
+        -d '{
+            "status": "In Progress"
+            }'
 
 
 Expected Response (Success):
@@ -141,10 +138,10 @@ Expected Response (Success):
 
 
 5. DELETE /api/courses/int:course_id
-Delete a course by ID.
-Example Request:
-    ```bash
-    curl -X DELETE http://127.0.0.1:5000/api/courses/1
+    Delete a course by ID.
+    Example Request:
+        ```bash
+        curl -X DELETE http://127.0.0.1:5000/api/courses/1
 
 
 Expected Response (Success):
@@ -155,12 +152,11 @@ Expected Response (Success):
 
 
 6. GET /api/courses/stats
-
-Get statistics about courses.
-This endpoint returns the total number of courses and gives a count of courses by their current status.
-Example Request:
-    ```bash
-    curl -X GET http://127.0.0.1:5000/api/courses/stats
+    Get statistics about courses.
+    This endpoint returns the total number of courses and gives a count of courses by their current status.
+    Example Request:
+        ```bash
+        curl -X GET http://127.0.0.1:5000/api/courses/stats
 
 Expected Response (Success):
 
