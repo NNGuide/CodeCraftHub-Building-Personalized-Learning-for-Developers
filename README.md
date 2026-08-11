@@ -64,7 +64,8 @@ Request Example:
             }'
 
 Expected Response (Successful):
-    ```text
+    ```
+
     {
         "id": 1,
         "name": "Introduction to Python",
@@ -82,7 +83,7 @@ Request Example:
     curl -X GET http://127.0.0.1:5000/api/courses
 
 Expected Response (Successful):
-    ```text
+    ```
     [
         {
             "id": 1,
@@ -102,7 +103,7 @@ Request Example:
     curl -X GET http://127.0.0.1:5000/api/courses/1
 
 Expected Response (Successful):
-    ```text
+    ```
     {
         "id": 1,
         "name": "Introduction to Python",
@@ -124,7 +125,7 @@ Request Example:
          }'
 
 Expected Response (Success):
-    ```text
+    ```
     {
         "id": 1,
         "name": "Introduction to Python",
@@ -142,7 +143,7 @@ Example Request:
     curl -X DELETE http://127.0.0.1:5000/api/courses/1
 
 Expected Response (Success):
-    ```text
+    ```
     {
         "message": "Course deleted"
     }
@@ -156,7 +157,7 @@ Example Request:
     curl -X GET http://127.0.0.1:5000/api/courses/stats
 
 Expected Response (Success):
-    ```text
+    ```
     {
         "total_courses": 3,
         "status_counts": {
