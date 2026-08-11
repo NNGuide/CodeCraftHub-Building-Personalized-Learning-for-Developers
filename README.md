@@ -63,6 +63,7 @@ Request Example:
             "target_date": "2023-12-31",
             "status": "Not Started"
             }'
+        
 
 Expected Response (Successful):
 
@@ -81,6 +82,7 @@ Retrieve all courses.
 Request Example:
     ```bash
     curl -X GET http://127.0.0.1:5000/api/courses
+
 
 Expected Response (Successful):
 
@@ -102,6 +104,7 @@ Retrieve a specific course by ID.
 Request Example:
     ```bash
     curl -X GET http://127.0.0.1:5000/api/courses/1
+
 
 Expected Response (Successful):
 
@@ -127,6 +130,7 @@ Request Example:
            "status": "In Progress"
          }'
 
+
 Expected Response (Success):
 
     {
@@ -147,6 +151,7 @@ Example Request:
     ```bash
     curl -X DELETE http://127.0.0.1:5000/api/courses/1
 
+
 Expected Response (Success):
 
     {
@@ -163,6 +168,7 @@ This endpoint returns the total number of courses and gives a count of courses b
 Example Request:
     ```bash
     curl -X GET http://127.0.0.1:5000/api/courses/stats
+    
 
 Expected Response (Success):
 
