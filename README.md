@@ -64,7 +64,6 @@ Request Example:
             }'
 
 Expected Response (Successful):
-    ```
 
     {
         "id": 1,
@@ -74,7 +73,6 @@ Expected Response (Successful):
         "status": "Not Started",
         "created_at": "2023-10-07 12:00:00"
     }
-    ```
 
 2. GET /api/courses
 Retrieve all courses.
@@ -83,7 +81,7 @@ Request Example:
     curl -X GET http://127.0.0.1:5000/api/courses
 
 Expected Response (Successful):
-    ```
+
     [
         {
             "id": 1,
@@ -94,7 +92,6 @@ Expected Response (Successful):
             "created_at": "2023-10-07 12:00:00"
         }
     ]
-    ```
 
 3. GET /api/courses/int:course_id
 Retrieve a specific course by ID.
@@ -103,7 +100,7 @@ Request Example:
     curl -X GET http://127.0.0.1:5000/api/courses/1
 
 Expected Response (Successful):
-    ```
+
     {
         "id": 1,
         "name": "Introduction to Python",
@@ -112,7 +109,7 @@ Expected Response (Successful):
         "status": "Not Started",
         "created_at": "2023-10-07 12:00:00"
     }
-    ```
+
 
 4. PUT /api/courses/int:course_id
 Update a specific course by ID.
@@ -125,7 +122,7 @@ Request Example:
          }'
 
 Expected Response (Success):
-    ```
+
     {
         "id": 1,
         "name": "Introduction to Python",
@@ -134,7 +131,7 @@ Expected Response (Success):
         "status": "In Progress",
         "created_at": "2023-10-07 12:00:00"
     }
-    ```
+
 
 5. DELETE /api/courses/int:course_id
 Delete a course by ID.
@@ -143,11 +140,11 @@ Example Request:
     curl -X DELETE http://127.0.0.1:5000/api/courses/1
 
 Expected Response (Success):
-    ```
+
     {
         "message": "Course deleted"
     }
-    ```
+
 
 6. GET /api/courses/stats
 Get statistics about courses.
@@ -157,7 +154,7 @@ Example Request:
     curl -X GET http://127.0.0.1:5000/api/courses/stats
 
 Expected Response (Success):
-    ```
+
     {
         "total_courses": 3,
         "status_counts": {
@@ -166,7 +163,6 @@ Expected Response (Success):
             "Completed": 1
         }
     }
-    ```
 
 - total_courses: The total number of courses in the system.
 - status_counts: An object that counts the courses based on their status ("Not Started", "In Progress", "Completed").
